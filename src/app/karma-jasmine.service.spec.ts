@@ -94,4 +94,9 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe(8);
   })
 
+  it('debería cambiar a mayúsculas', () => {
+    const resultado = service.cadena("estoy llegando");
+    expect(resultado).toEqual("ESTOY LLEGANDO");
+  })
+
 });

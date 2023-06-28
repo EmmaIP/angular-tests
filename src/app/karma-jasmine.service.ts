@@ -48,4 +48,8 @@ export class KarmaJasmineService {
       return b;
     }
   }
+
+  cadena(a: any) : any {
+    return a.toUpperCase();
+  }
 }
