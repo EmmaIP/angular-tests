@@ -73,4 +73,10 @@ describe('KarmaJasmineService', () => {
     const resultado = service.dividir(-10, 5);
     expect(resultado).toBe(-2);
   });
+
+  it('debería indicar si el número es par', () => {
+    const resultado = service.par(8);
+    expect(resultado).toBe(0);
+  })
+
 });

@@ -22,4 +22,11 @@ export class KarmaJasmineService {
   dividir(a: number, b: number): number {
     return a / b;
   }
+
+
+  par(a: number) : number {
+    return a % 2;
+  }
+
+ 
 }
