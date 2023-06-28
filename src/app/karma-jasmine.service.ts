@@ -79,7 +79,7 @@ export class KarmaJasmineService {
     }
   }
 
-  array(a: any): number {
+  array(a: any[]): number {
     return a.length;
   }
 }
