@@ -119,4 +119,9 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe("Sí contiene");
   })
 
+  it('debería comprobar si es primo o no', () => {
+    const resultado = service.primo(8);
+    expect(resultado).toBe("No es primo");
+  })
+
 });
