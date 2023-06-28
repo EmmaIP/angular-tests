@@ -68,6 +68,14 @@ export class KarmaJasmineService {
       let noCierto: string = "No es primo";
       return noCierto;
     }
+  }
 
+  positivo(a: number): string {
+    if (a > 0) {
+      let cierto: string = "Es positivo";
+    } else {
+      let noCierto: string = "No es positivo";
+      return noCierto;
+    }
   }
 }
