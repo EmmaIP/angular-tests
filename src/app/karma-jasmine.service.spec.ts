@@ -89,4 +89,9 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe(120);
   })
 
+  it('debería obtener el número máximo', () => {
+    const resultado = service.maximo(5, 8);
+    expect(resultado).toBe(8);
+  })
+
 });
