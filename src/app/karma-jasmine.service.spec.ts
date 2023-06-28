@@ -79,4 +79,9 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe(0);
   })
 
+  it('debería comprobar que es un palíndromo', () => {
+    const resultado = service.palindromo("reconocer");
+    expect(resultado).toEqual("reconocer");
+  })
+
 });

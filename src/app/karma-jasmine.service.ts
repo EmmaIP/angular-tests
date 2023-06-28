@@ -28,5 +28,7 @@ export class KarmaJasmineService {
     return a % 2;
   }
 
- 
+  palindromo(a: any) : any {
+    return a.split("").reverse().join("");
+  }
 }
