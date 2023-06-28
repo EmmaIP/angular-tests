@@ -111,4 +111,8 @@ export class KarmaJasmineService {
     });
     return suma / longitud;
   }
+
+  cadenaArray(a: any): any[] {
+    return a.split("");
+  }
 }

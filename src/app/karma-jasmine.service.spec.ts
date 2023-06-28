@@ -134,4 +134,9 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe(4);
   })
 
+  it('debería comprobar que pasa una cadena a array', () => {
+    const resultado = service.cadenaArray("hola");
+    expect(resultado).toEqual(["h", "o", "l", "a"]);
+  })
+
 });
