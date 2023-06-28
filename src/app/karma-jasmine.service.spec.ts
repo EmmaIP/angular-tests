@@ -84,4 +84,9 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toEqual("reconocer");
   })
 
+  it('debería calcular el factorial del número', () => {
+    const resultado = service.factorial(5);
+    expect(resultado).toBe(120);
+  })
+
 });
