@@ -102,4 +102,13 @@ export class KarmaJasmineService {
       return false;
     }
   }
+
+  promedio(a: any[]): number {
+    let suma: number = 0;
+    let longitud: number = a.length;
+    a.forEach(function (b) {
+      suma += b;
+    });
+    return suma / longitud;
+  }
 }

@@ -129,4 +129,9 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe(true);
   })
 
+  it('debería comprobar el promedio', () => {
+    const resultado = service.promedio([5, 3, 4]);
+    expect(resultado).toBe(4);
+  })
+
 });
