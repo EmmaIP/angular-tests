@@ -109,4 +109,9 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe("No es positivo");
   })
 
+  it('debería calcular el número de elementos', () => {
+    const resultado = service.array(["hola", "mundo"]);
+    expect(resultado).toBe(2);
+  })
+
 });

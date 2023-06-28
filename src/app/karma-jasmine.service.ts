@@ -78,4 +78,8 @@ export class KarmaJasmineService {
       return noCierto;
     }
   }
+
+  array(a: any): number {
+    return a.length;
+  }
 }
