@@ -115,4 +115,13 @@ export class KarmaJasmineService {
   cadenaArray(a: any): any[] {
     return a.split("");
   }
+
+  sumaDigitos(a:any): number {
+    let array = a.split("");
+    let suma: number = 0;
+    array.forEach(function (b) {
+      suma += parseInt(b);
+    });
+    return suma;
+  }
 }

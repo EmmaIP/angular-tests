@@ -139,4 +139,10 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toEqual(["h", "o", "l", "a"]);
   })
 
+  it('debería sumar los dígitos', () => {
+    const resultado = service.sumaDigitos("123");
+    expect(resultado).toBe(6);
+  })
+
+
 });
