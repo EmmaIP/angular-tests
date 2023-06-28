@@ -99,4 +99,10 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toEqual("ESTOY LLEGANDO");
   })
 
+  it('debería comprobar si es primo o no', () => {
+    const resultado = service.primo(7);
+    expect(resultado).toBe("Es primo");
+  })
+
+
 });

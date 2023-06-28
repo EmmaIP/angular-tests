@@ -49,7 +49,25 @@ export class KarmaJasmineService {
     }
   }
 
-  cadena(a: any) : any {
+  cadena(a: any): any {
     return a.toUpperCase();
+  }
+
+  primo(a: number): string {
+    let numeroPrimo = true;
+    for (var i = 2; i < a; i++) {
+
+      if (a % i == 0) {
+        numeroPrimo = false;
+      }
+    }
+    if (numeroPrimo == true) {
+      let cierto: string = "Es primo";
+      return cierto;
+    } else {
+      let noCierto: string = "No es primo";
+      return noCierto;
+    }
+
   }
 }
