@@ -124,4 +124,9 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe("No es primo");
   })
 
+  it('verifcar que es positivo o no', () => {
+    const resultado = service.positivo2(6);
+    expect(resultado).toBe(true);
+  })
+
 });

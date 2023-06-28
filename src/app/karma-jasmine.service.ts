@@ -94,4 +94,12 @@ export class KarmaJasmineService {
       return noCierto;
     }
   }
+
+  positivo2(a: number): boolean {
+    if (a > 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
