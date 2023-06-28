@@ -114,4 +114,9 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe(2);
   })
 
+  it('debería verificar si contiene un substring', () => {
+    const resultado = service.substring(["perro", "gato", "pez"], "pez");
+    expect(resultado).toBe("Sí contiene");
+  })
+
 });

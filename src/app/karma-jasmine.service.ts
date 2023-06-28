@@ -82,4 +82,16 @@ export class KarmaJasmineService {
   array(a: any[]): number {
     return a.length;
   }
+
+  substring(a: any[], b: string): string {
+    let array = a.some(a => a.includes(b));
+    if (array == true) {
+      let cierto: string = "Sí contiene";
+      return cierto;
+    }
+    else {
+      let noCierto: string = "No contiene";
+      return noCierto;
+    }
+  }
 }
