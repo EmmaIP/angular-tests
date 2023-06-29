@@ -140,4 +140,24 @@ export class KarmaJasmineService {
     let perimetro: number = numero_lados * longitud_lado;
     return apotema * perimetro / 2;
   }
+
+  moda(a: any[]): number {
+    let moda: number = 0;
+    let contadorMax: number = 0;
+
+    for (let i = 0; i < a.length; i++) {
+
+      let contador: number = 0;
+      for (let j = 0; j < a.length; j++) {
+        if (a[i] == a[j]) {
+          contador++;
+        }
+        if (contador > contadorMax) {
+          moda = a[i];
+          contadorMax = contador;
+        }
+      }
+    }
+    return moda;
+  }
 }

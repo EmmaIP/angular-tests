@@ -154,4 +154,9 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe(30);
   })
 
+  it('debería encontrar la moda', () => {
+    const resultado = service.moda([5, 3, 4, 3, 4, 4, 4]);
+    expect(resultado).toBe(4);
+  })
+
 });
