@@ -144,5 +144,10 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe(6);
   })
 
+  it('debería verificar si es un anagrama', () => {
+    const resultado = service.anagrama("sergio", "riesgo");
+    expect(resultado).toBe(true);
+  })
+
 
 });

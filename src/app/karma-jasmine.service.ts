@@ -116,12 +116,23 @@ export class KarmaJasmineService {
     return a.split("");
   }
 
-  sumaDigitos(a:any): number {
+  sumaDigitos(a: any): number {
     let array = a.split("");
     let suma: number = 0;
     array.forEach(function (b) {
       suma += parseInt(b);
     });
     return suma;
+  }
+
+  anagrama(a: string, b: string): any {
+    let palabra1 = a.split("").sort().join("");
+    let palabra2 = b.split("").sort().join("");
+    if(palabra1 == palabra2) {
+      return true;
+    }
+    else {
+      return false;
+    }
   }
 }
