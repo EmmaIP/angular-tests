@@ -160,4 +160,20 @@ export class KarmaJasmineService {
     }
     return moda;
   }
+
+  duplicado(a: any[]): any[] {
+
+    let duplicados = [];
+    let aOrdenado = a.sort();
+    let duplicado: number = 0;
+
+    for (let i = 0; i < aOrdenado.length; i++) {
+      if (aOrdenado[i + 1] == aOrdenado[i]) {
+        duplicados.push(aOrdenado[i]);
+      }
+     
+    }
+    return duplicados;
+  }
+
 }

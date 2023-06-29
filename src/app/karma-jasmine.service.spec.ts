@@ -159,4 +159,9 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe(4);
   })
 
+  it('debería encontrar el duplicado', () => {
+    const resultado = service.duplicado([5, 3, 4, 6, 4, 4, 4]);
+    expect(resultado).toEqual([4, 4, 4]);
+  })
+
 });
