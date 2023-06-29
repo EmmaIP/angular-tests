@@ -149,5 +149,9 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe(true);
   })
 
+  it('debería comprobar el aréa de un polígono', () => {
+    const resultado = service.areaPoligono(5, 3, 4);
+    expect(resultado).toBe(30);
+  })
 
 });

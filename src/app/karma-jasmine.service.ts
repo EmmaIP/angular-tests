@@ -128,11 +128,16 @@ export class KarmaJasmineService {
   anagrama(a: string, b: string): any {
     let palabra1 = a.split("").sort().join("");
     let palabra2 = b.split("").sort().join("");
-    if(palabra1 == palabra2) {
+    if (palabra1 == palabra2) {
       return true;
     }
     else {
       return false;
     }
+  }
+
+  areaPoligono(apotema: number, longitud_lado: number, numero_lados: number): number {
+    let perimetro: number = numero_lados * longitud_lado;
+    return apotema * perimetro / 2;
   }
 }
